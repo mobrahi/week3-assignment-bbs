@@ -19,7 +19,6 @@ body {
 
 .navbar {
     background-color: var(--dark); 
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,8 +27,8 @@ body {
     color: white;
     position: sticky;
     top: 0;
-    width: 100%;
-    margin: 16px;
+    width: auto;
+    margin: 24px;
 }
 
 .navbar-left {
@@ -67,6 +66,48 @@ li a:hover:not(.active) {
     border-radius: 10px;
     width: 70px;
     height: 40px;   
+}
+
+.hero {
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: wrap;
+    margin: 24px;
+}
+
+h1 {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 83px;
+    /* text-align: justify; */
+    width: 100%;
+    height: auto;
+    
+}
+
+/* h1:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  } */
+
+.hero >div {
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    align-items: center;
+    width: 1411px;
+    height: auto;
+}
+
+.hero > div > img {
+    width: 700.5px;
+    height: auto;
+    margin-top: 16px;
 }
 
 @media screen and (max-width: 600px) {
