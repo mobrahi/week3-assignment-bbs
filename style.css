@@ -1,8 +1,10 @@
 
 :root   {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     --dark: #2A2E2A ;
     --yellow: #F4CE47; 
+    --white: #FFFFFF;
+
 }
 
 * {
@@ -80,8 +82,7 @@ h1 {
     flex: 1 1 100%;
     justify-content: center;
     align-items: center;
-    font-family: monospace;
-    font-size: 83px;
+    font-size: 78px;
     /* text-align: justify; */
     width: 100%;
     height: auto;
@@ -109,6 +110,70 @@ h1 {
     height: auto;
     margin-top: 16px;
 }
+
+#bestsellers {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+    min-height: 100vh;
+    border: 1px solid red;
+    padding: 16px;
+}
+
+#bestsellers-title {
+    color: var(--white);
+    padding-bottom: 16px;
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+#bestsellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex: 0 0 50%; */
+    gap: 8px;
+}
+
+.bestsellers-card {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    padding: 16px;
+    width: 100%;
+    /* max-width: 395px; */
+    flex: 1 0 26%;
+    border-radius: 20px;
+    background-color: var(--white) ;
+    border: 1px solid red;
+
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid red;
+    margin-right: 8em;
+}
+
+.content-review {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.card-cta {
+    display: flex;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
     .navbar {
