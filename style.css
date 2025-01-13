@@ -324,7 +324,48 @@ footer {
     font-style: normal;
 }   
 
-/* books.html section */
+/* begin: books.html section */
+main {
+    min-height: 100vh;
+    margin: 0;
+
+    background-color: var(--dark);
+    margin-bottom: 16px ;
+}
+
+#top-filter {
+    display: flex;
+    padding: 16px;
+    justify-content: center; 
+    border: 1px dashed red;
+}
+
+#top-filter > img {
+    display: flex;
+    border: 1px solid purple;
+    /* max-width: 1427px; */
+    /* height: auto; */
+    flex: 1 1 auto;
+}
+
+#search-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 8px;
+    padding: 16px;
+    width: 295px;
+    height: 1280px;
+    border: 1px dashed purple;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+
+
+/* end: books.html section */
+
 
 
 

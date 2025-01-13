@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- navbar section -->
+    <!-- BEGIN sections: navbar section -->
     <nav class="navbar">
         <div class="navbar-left">
             <a href="#">
@@ -37,7 +37,8 @@
             </a>
         </div>
     </nav>
-<!-- top banner section -->
+    <!-- END  sections: navbar section -->
+    <!-- BEGIN sections: top banner section -->
     <div class="banner">
         <div class="banner-books">ALL BOOKS</div>
         <div class="banner-books">ALL BOOKS</div>
@@ -45,15 +46,106 @@
         <div class="banner-books">ALL BOOKS</div>
         <div class="banner-books">ALL BOOKS</div>
     </div>
+    <!-- END sections: top banner section -->   
+
+    <!-- BEGIN sections: main section -->
+    <main id="main">
+        <div id="top-filter">
+            <img src="./assets/image-books_html/main/Top.png" alt="filter bar">
+        </div>
+
+        <!-- BEGIN sections: side -->
+        <side id="search-bar">
+            <form action="categories">
+                <h4>CATEGORIES</h4><br>
+                <form action="find-category">
+                    <textarea name="message" rows="1" cols="23">FIND CATEGORY</textarea>
+                    <!-- <input type="submit">  -->
+                </form>
+                <form action="categories-search">
+                    <select name="categories1" id="categories1">
+                        <option value="imaginative-literature">Imaginative literature</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <select name="categories2" id="categories2">
+                        <option value="scientific-literature">Scientific literature &nbsp;&nbsp;</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <select name="categories3" id="categories3">
+                        <option value="business">Business &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <select name="categories4" id="categories4">
+                        <option value="educational">Educational &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </option><br>
+                        <option value="other">Other</option>
+                    </select>
+                    <select name="categories5" id="categories5">
+                        <option value="other">Other &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </option><br>
+                        <option value="other">Other</option>
+                    </select>
+                </form>
+            </form>
+            <form action="publish-date">
+                <h4>PUBLISH DATE</h4><br>
+                <input type="date" id="publish-date"></input>
+            </form>
+            <form action="language">
+                <h4>LANGUAGE</h4><br>
+                <input type="checkbox" id="language1" name="english" value="English">
+                <label for="language1">English</label><br>
+                <input type="checkbox" id="language2" name="russian" value="Russian">
+                <label for="language2">Russian</label><br>
+                <input type="checkbox" id="language3" name="azerbaijani" value="Azerbaijani">
+                <label for="language3">Azerbaijani</label><br><br>
+                <input type="submit" value="VIEW ALL">
+            </form>
+            <form action="price-range">
+                <h4>PRICE</h4><br>
+                <label for="Price">$5 to $60</label><br><br>
+                <input type="range" id="price" name="price" min="0" max="100"><br>
+                <input type="reset">
+            </form>   
+            <form action="publishing-house">
+                <h4>PUBLISHING HOUSE</h4><br>
+                <input type="checkbox" id="publishing-house1" name="rib knits" value="rib knits">
+                <label for="publishing-house1">Rib Knits</label><br>
+                <input type="checkbox" id="publishing-house2" name="panne velvet" value="panne velvet">
+                <label for="publishing-house2">Panne Velvet</label><br>
+                <input type="checkbox" id="publishing-house3" name="elasticized fabrics" value="elasticized fabrics">
+                <label for="publishing-house3">Elasticized Fabrics</label><br>
+                <input type="checkbox" id="publishing-house4" name="dotted swiss" value="dotted swiss">
+                <label for="publishing-house4">Dotted Swiss</label><br>
+                <input type="checkbox" id="publishing-house5" name="double knit" value="double knit">
+                <label for="publishing-house5">Double Knit</label><br><br>
+                <input type="submit" value="VIEW ALL">
+            </form>
+            <form action="cover-style">
+                <h4>COVER STYLE</h4><br>
+                <input type="radio" id="cover-style1" name="hardcover" value="hardcover">
+                <label for="cover-style1">Hardcover</label><br>
+                <input type="radio" id="cover-style2" name="softcover" value="softcover">  
+                <label for="cover-style2">Softcover</label>  
+            </form>
+            <form action="other">
+                <h4>OTHER</h4><br>
+                <input type="checkbox" id="other" name="4*stars" value="4*stars">
+                <label for="other">4*stars</label>
+            </form>
+        </side>
 
 
 
 
 
 
+    </main>
 
 
-    <!-- footer  -->
+
+
+
+
+    <!-- BEGIN sections: footer section -->
     <footer>
         <div id="top-footer">
             <div class="top-footer-left">
@@ -87,7 +179,7 @@
         </div>
 
     </footer>
-
+    <!-- END sections: footer section -->
 
 
 </body>
