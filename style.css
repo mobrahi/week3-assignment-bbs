@@ -324,8 +324,8 @@ footer {
     font-style: normal;
 }   
 
-/* begin: books.html section */
-main {
+/* begin: centre section */
+#books-page-container {
     min-height: 100vh;
     margin: 0;
 
@@ -337,30 +337,96 @@ main {
     display: flex;
     padding: 16px;
     justify-content: center; 
-    border: 1px dashed red;
 }
 
 #top-filter > img {
     display: flex;
-    border: 1px solid purple;
     /* max-width: 1427px; */
     /* height: auto; */
     flex: 1 1 auto;
 }
 
-#search-bar {
+#flex-grid {
+    display: flex;
+    gap: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 8px;
+    flex: 1;
     padding: 16px;
-    width: 295px;
+    min-width: 295px;
     height: 1280px;
-    border: 1px dashed purple;
     background-color: white;
     border-radius: 20px;
 }
 
+#book-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+}
+
+.book-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1 0 30%;
+    margin-bottom: 32px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+    border-radius: 20px;
+    min-width: 343.5px;
+    background-color: white;
+}
+
+.book-card-image {
+    display: flex;
+    justify-content: end;
+    /* position: relative; */
+    padding: 16px 16px 0 16px;
+}
+
+.book-card-image > img {
+    border-radius: 11.99px;
+    min-width: 308px;
+}
+
+.book-card-cta {
+    display: inline;
+    position: absolute;
+    padding: 16px;
+}
+
+.book-card-title {
+    padding: 16px 16px 0 16px;
+    color: black;
+}
+
+.book-card-review {
+    padding: 16px 16px 0 16px;
+}
+
+.book-card-prices {
+    padding: 16px 16px 0 16px;
+    margin-bottom: 16px;
+}
+
+#pagination-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+}
 
 
 
