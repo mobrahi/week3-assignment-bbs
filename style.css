@@ -427,12 +427,57 @@ footer {
     justify-content: center;
     margin-bottom: 5em;
 }
-
-
-
 /* end: books.html section */
 
+/* start: products page */
 
+/* start: hero section */
+
+.hero-products-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 20px;
+    background-color: var(--dark);
+
+}
+
+.navbar-hero {
+    display: flex;
+    padding: 16px;
+}
+
+.navbar-hero > ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    color: white;
+}
+
+.book-info-wrapper {
+    display: flex;
+    padding: 16px;
+    gap: 1em;
+}
+
+.book-info-image {
+    display: flex;
+}
+
+.book-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+}
+
+table {
+    border-spacing: 10px;
+}
+th {
+    text-align: left;
+    font-weight: 400;
+  }
 
 
 
