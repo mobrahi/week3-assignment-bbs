@@ -5,6 +5,7 @@
     --yellow: #F4CE47; 
     --white: #FFFFFF;
     --darkgrey:#000000DE;
+    --background-color: rgb(250, 247, 247);
 }
 
 * {
@@ -437,8 +438,9 @@ footer {
     flex-direction: column;
     gap: 1em;
     border-radius: 20px;
-    margin: 16px;
     background-color: var(--dark);
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .hero-main-container {
@@ -546,40 +548,49 @@ th {
     background-color: white;
 }
 
-/* BEGIN: you may also like section */
+/* BEGIN: you may also like section (PAGE PRODUCTS.HTML)*/
 
 .may-also-like-container {
     display: flex;
     flex-direction: column;
-    /* margin-left: 16px; */
-    /* margin-top: 16px; */
-    /* padding-top: 16px; */
-    background-color: rgb(250, 247, 247);
-    border: 1px solid red;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding-top: 16px;
+    /* border: 1px dashed red; */
+}
+
+.may-also-like-container > h2 {
+    padding-bottom: 16px;
+    color: black;
 }
 
 .like-book-card-container {
     display: flex;
-    /* justify-content: space-between;
-    gap: 16px; */
+    justify-content: space-between;
 }
 
 .like-book-card-wrapper {
     display: flex;
     flex-direction: column;
-    /* border-radius: 16px; */
-    /* width: 193px; */
-    /* padding: 16px; */
-    /* gap: 16px; */
-    /* margin: 16px; */
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 16px;
+    padding: 8px;
     background-color: white;
-
-    border: 1px solid red;
+    margin-right: -64px;
+    /* width: 193px;
+    height: 360px;     */
 }
 
 .like-book-card-image {
     display: flex;
     position: relative;
+    /* width: 161px;
+    height: 248px; */
+    /* border: 1px solid red; */
+ 
 }
 
 .like-book-card-cta {
@@ -594,7 +605,116 @@ th {
     flex-direction: column;
     gap: 8px;
     color: black;
+    margin-left: -30px;
+    margin-top: 8px;
+    /* border: 1px solid red; */
 }
+
+.like-author-name {
+    font-size: 16px;
+}
+
+.like-book-title {
+    font-weight: bold;
+    font-size: 17px;
+}
+/* END: you may also like section (PAGE PRODUCTS.HTML)*/
+
+/* start: readers review section */
+.readers-review-header-container {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+    justify-content: space-between;
+}
+
+.readers-review-header-container > h2 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: black;
+}
+
+.readers-review-btn {
+    width: 151px;
+    height: 56px;
+    border-radius: 16px;
+    border: none;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: var(--background-color);
+    border: 1px solid black;
+}
+
+.top-footer-left {
+    margin-left: 16px
+}
+
+.reviews-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 100vh;
+}
+
+.reviews-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 49%;
+    margin-right: 12px;
+    margin-bottom:12px;
+    border-radius: 20px;
+    background-color: white;
+    min-width: 596px;
+    /* height: 296px; */
+}
+
+.reviews-name-date {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    padding: 16px;
+    gap: 16px;
+}
+
+.reviewer-name {
+    display: flex ;
+}
+
+time {
+    display: flex;
+    justify-content: end;
+    flex: 1 0 50%;
+}
+
+.reviewer-photo {
+    padding: 16px;
+}
+
+.reviewer-review  >p{
+    color: black;
+    margin-left: 16px;
+    padding-left: 8px;
+    padding-bottom: 16px;
+}
+
+.review-read-more > a{
+    display: flex;
+    color: black;
+    font-size: 18px;
+    margin-left: 16px;
+    text-decoration: underline;
+}
+/* end: review section */
+
+
+
 
 
 /* media screen  */
