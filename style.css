@@ -6,6 +6,8 @@
     --white: #FFFFFF;
     --darkgrey:#000000DE;
     --background-color: rgb(250, 247, 247);
+    --matteblack: #00000061;
+
 }
 
 * {
@@ -55,9 +57,14 @@ a {
 }
 
 li a:hover:not(.active) {
-    background-color: var(--yellow);
+    background-color: pink;
     text-decoration: none;
+    color: green;
 }
+
+/* li a:active {
+    color: pink;
+} */
 
 .navbar-right {
     display: flex;
@@ -295,6 +302,7 @@ h2 {
 footer {
     display: flex;
     flex-direction: column;
+    margin-top: 16px;
 }
 
 #top-footer {
@@ -713,8 +721,162 @@ time {
 }
 /* end: review section */
 
+/* BEGIN sections: checkout section  */
 
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    height: 580px;
+    background-color: var(--dark);
+    color: white;
+    border-radius: 20px;
+    margin: 16px;
+}
 
+/* .checkout-navbar-wrapper {
+    display: flex;
+    border: 1px solid blue;
+ 
+} */
+
+.checkout-navbar > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 32px 16px;
+}
+
+.checkout-navbar > ul > li > a:link {
+    color: yellow;
+}
+
+.main-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid green;
+
+}
+
+/* .main-form-wrapper {
+    display: flex;
+    border: 1px dashed brown;
+
+} */
+
+.contact-details-input {
+    border: 1px solid white;
+    width: 572px;
+    margin-left: 16px;
+}
+
+.main-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 572px;
+    /* margin: 32px 16px; */
+    font-size: larger;
+    border: 1px solid blue;
+}
+
+.sign-in-button {
+    border: none;
+    background-color:var(--dark);
+    font-weight: bold;
+    color: white;
+    margin-left: -105px;
+}
+
+.name-tel-form {
+    display: flex;
+    flex-direction: column;
+    width: 572px;
+    /* margin: 32px 16px; */
+    border: 2px dashed yellow;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+input[type=submit] {
+    background-color: var(--yellow);
+    width: 100%;
+    color: black;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.order-summary-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 371px;
+    margin-right: 16px;
+    /* width: 271px; */
+    background-color: var(--matteblack);
+    border: 1px solid green;
+}
+
+  .books-order-table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+    margin-left: 10px;
+    margin-top: 16px;
+    border: 1px solid red;
+  }
+
+  .books-order-table {
+    text-align: justify;
+    border: 1px solid blue;
+  }
+
+  .books-order-table-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-right: 60px;
+    margin-left: 10px;
+  }
+
+  .promocode-form {
+    display: flex;
+    justify-content: right;
+    margin-right: 16px;
+    border: 1px dashed white;
+  }
+
+#submit-promocode {
+    width: 104px;
+    height: 44px;
+    border: none;
+    border-radius: 16px;
+    background: #FFFFFF61;
+  }
+
+  #promocode {
+    /* width: min-content; */
+    width: 260px;
+  }
+
+/* END  sections: checkout section  */
 
 
 /* media screen  */
